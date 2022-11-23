@@ -1,0 +1,231 @@
+/* GENERAL STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', serif;
+}
+
+section {
+  padding: 0 6rem;
+}
+
+/* PROJECTS SECTION */
+.projects > h2 {
+  text-align: center;
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+  color: #03045e;
+
+  padding-bottom: 0.7rem;
+  border-bottom: 2px solid #ff006e;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.projects {
+  margin: 2rem 0;
+  padding: 0 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.projects-content {
+  width: 75%;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.projects-content article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-content article img {
+  width: 15rem;
+  height: 13rem;
+  border: 1px solid #03045e;
+}
+
+.projects-content article h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.projects-content article .description {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.projects-content article .description span {
+  cursor: pointer;
+}
+
+.projects-content article p {
+  font-size: 1rem;
+  width: 80%;
+  display: none;
+}
+
+.projects-content article .open {
+  display: block;
+}
+
+.projects-content article .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.projects-content article .buttons a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  background: #ff006e;
+  color: #f1faee;
+  box-shadow: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.projects-content article .buttons a:hover {
+  background: #6a0732;
+}
+
+.projects-content article .buttons a + a {
+  background: #3a86ff;
+}
+
+.projects-content article .buttons a + a:hover {
+  background: #13356c;
+}
+
+/* PROJECTS SECTION */
+/* .projects {
+  margin-top: 18rem;
+  display: grid;
+  place-items: center;
+}
+
+.projects-content {
+  width: 75%;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.projects-content article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-content article img {
+  width: 15rem;
+  height: 13rem;
+  border: 1px solid #03045e;
+}
+
+.projects-content article h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.projects-content article .description {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.projects-content article .description span {
+  cursor: pointer;
+}
+
+.projects-content article p {
+  font-size: 1rem;
+  width: 80%;
+  display: none;
+}
+
+.projects-content article .open {
+  display: block;
+}
+
+.projects-content article .buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.projects-content article .buttons button {
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  background: #ff006e;
+  color: #f1faee;
+  box-shadow: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.projects-content article .buttons button + button {
+  background: #3a86ff;
+} */
+
+/* MEDIA QUERIES */
+/* TABLETS */
+@media (max-width: 820px) {
+  section {
+    padding: 0 3rem;
+  }
+
+  .projects {
+    margin-top: 10rem;
+    display: grid;
+  }
+  .projects-content {
+    width: 90%;
+    gap: 2rem;
+  }
+  .projects-content article img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .projects-content article p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+/* MOBILE PHONES */
+@media (max-width: 420px) {
+  section {
+    padding: 0 1.5rem;
+  }
+  .projects {
+    margin-top: 3rem;
+    display: block;
+  }
+  .projects-content {
+    width: 100%;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-content article img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .projects-content article p {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
